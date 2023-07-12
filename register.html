@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+         <!--Header  -->
+  <header>
+    <div class="wrappers">
+      <div class="brands">
+        <a href="#hero2">
+          <h1>Tw<span>o</span> Scissor<span>s</span></h1>
+        </a>
+      </div>
+      <nav>
+        <a href="index.html" data-after="Home">Home</a>
+        <a href="services.html" data-after="Services">Services & Training</a>
+        <a href="About.html" data-after="About Us">About Us </a>
+        <a href="register.html" data-after="Appointment">Signup</a>
+        <a href="contact.html" data-after="Contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!--End Header  -->
+
+    <!-- start registrasion  form  -->
+
+    <section id="hero2">
+        <div class="hero2 container-1">
+
+    <div class="wrapper">
+        <div class="title">
+            Rgistration Form
+        </div>
+    <div class="Form">
+
+        <form action="register.php" method="POST">
+        <div class="input_Field">
+            <label for="Name" >Name </label>
+            <input type="text" class="input" id="Name" name="name" required>
+        </div>
+        <div class="input_Field">
+            <label for="Name" >Email </label>
+            <!-- <input type="text" class="input" id="Email" name="email" required> -->
+            <input type="email" class="input" id="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </div>
+            <div class="input_Field">
+            <label for="Mobile">Mobile </label>
+            <input type="text" class="input" id="Mobile" name="mobile_number"  pattern="[0-9]{10}" required>
+            
+        </div>
+        <div class="input_Field">
+            <label for="Gender" >Gender </label>
+            <div class="custom_select">
+                <select  id="Gender" name="gender"  required>
+                    <option value=""></option>
+                    <option value="male"  >Male</option>
+                    <option value="Female"  >Female</option>
+                </select>
+            </div>
+         </div>
+            <div class="input_Field">
+                <label for="user_type" >User Type </label>
+                <div class="custom_select">
+                    <select name="user_type" id="user_type" name="user_type"  required>
+                        <option value=""></option>
+                        <option value="barber"  >Barber</option>
+                        <option value="customer"  >Customer</option>
+                    </select>
+                </div>
+             </div>
+       <div class="input_Field">
+      
+
+            <label for="Email" >Password </label>
+            <input type="password" class="input" id="Email" name="password" required>
+
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-outline-success">Register</button>
+        <!-- <button type="submit" class="btn btn-outline-primary" onclick="logout()">Login</button> -->
+        <a class="btn btn-outline-primary" href="login.html">Login</a>
+        </div>
+        <!-- <button class="btn btn-outline-success">Login</button> -->
+        <!-- <button>Submit</button> -->
+    </form>
+    </div>
+    </div>
+        </div>
+    </section>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- <script>
+
+        // const x=document.getElementById('login').addEventListener('click',function(){
+        //     window.location.href('./login.html');
+        // })
+        const redirect=function(){
+            window.location.href('./login.html');
+        }
+    </script> -->
+
+    <script>
+    const logout=function(){
+        window.location.assign('login.html');
+    }
+    
+    </script>
+</body>
+</html>

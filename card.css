@@ -1,0 +1,93 @@
+  body {
+  font-family: "Nunito", sans-serif;
+  background: #3c4954;
+ color: aliceblue;
+  padding: 40px;
+
+ /* background: rgba(0, 0, 0, 0.4) url('./pg/9.jpg') !important;  */
+ height: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode:darken !important;
+}
+.card {
+  color: rgb(255, 254, 252);
+  border-radius: 4px;
+  background: #22303c;
+  /* background: #fff; */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  font-weight: 800 !important;
+
+}
+
+.img-fluid{
+  max-width: 80% !important;
+
+}
+
+.card img {
+  /* position: absolute; */
+  /* top: 20px; */
+  /* right: 15px; */
+  max-height: 250px;
+  max-width: 100px;
+}
+.card-1 p {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+.card-1 span {
+  font-weight: normal;
+}
+.card-1 {
+  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+  /* background-image: url(https://previews.123rf.com/images/john79/john791702/john79170200131/72418461-barber-shop-design-silhouette-mustache-and-hat-scissors.jpg); */
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+  font-weight: 900;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .card-2 {
+  background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-3 {
+  background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+} */
+
+@media (max-width: 990px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+
+.card-container .col-md-4{
+  margin-bottom: 25px;
+}
+
+
+
+

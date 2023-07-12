@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    /* background-image: url(./sal/frm1.jpg);
+    background-color: black; */
+    /* opacity: .3; */
+    /* padding: 0 10px; */
+
+    background: rgba(0, 0, 0, 0.4) url('./sal/frm1.jpg') !important;
+ height: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode:darken !important;
+    
+}
+.wrapper{
+    max-width: 500px;
+    border-radius: 25px;
+
+    width: 100%;
+    background:rgba(3, 0, 0, 0.925);
+    color: white;
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 3px 3px 5px rgba(167, 140, 140, 0.3);
+}
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 27px;
+    color: tomato;
+text-transform: uppercase;
+text-align: center;
+}
+.wrapper .Form{
+    width: 100%;
+}
+.wrapper .Form .input_Field{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+}
+.wrapper .Form .input_Field label{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+.wrapper .Form .input_Field .input,
+.wrapper .Form .input_Field .textarea{
+    width: 100%;
+    outline: none;
+    bottom: 1px solid grey;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.wrapper .Form .input_Field .textarea{
+    resize: none;
+    height: 100px;
+
+}
+.wrapper .Form .input_Field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.wrapper .Form .input_Field .custom_select select{
+    
+border: 1px solid grey ;
+appearance: none;
+width: 100%;
+height: 39px;
+padding: 8px 10px;
+border-radius: 4px;
+outline: none;
+
+}
+ .dt input{
+    
+    border: 1px solid grey ;
+    appearance: none;
+    width: 100%;
+    height: 39px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    outline: none;
+margin-right: 100%;
+
+    
+    } 
+    .wrapper .Form .input_Field .custom_select select:before{
+        content:  "";
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        border: 8px solid;
+        border-color: tomato transparent transparent transparent;   
+    pointer-events: none;
+    }
+    .wrapper .Form .input_Field .input:focus,
+    .wrapper .Form .input_Field .textarea:focus,
+    .wrapper .Form .input_Field .select:focus{
+        border: 2px solid tomato;
+    }
+    .wrapper .Form .input_Field .btn
+     
+    {
+        
+
+        margin-top: 5px;
+        padding: 10px 20px;
+        color:white;
+        background-color:transparent;
+        border: 2px solid white;
+        font-weight: 600;
+        font-size: 15px;
+       transition: .3s ease ;
+       transition-property: background-color, color;
+       letter-spacing: 0.1rem;
+       cursor: pointer;
+    }
+    .wrapper .Form .input_Field .btn:hover
+    {
+        background-color:white;
+        color: black;
+        
+        
+    }
+
+
+
+
+    /* ------for nav bar login and ragistration form and booking form -------- */
+
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+
+
+.brands h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: .1rem;
+    text-align:center ;
+    float: left;
+    line-height: 100px; 
+}
+.brands span{
+    color:rgb(243, 74, 44);
+}
+
+.wrappers{
+    width: 1210px;
+    margin: -10px auto;
+     text-align: center;
+     height: 100px;
+}
+header{
+    height: 80px;
+    background-color: #29323c;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+
+}
+nav{
+    float: right;
+    line-height: 100px;
+    
+}
+nav a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+     font-weight: 500;
+     cursor: pointer;
+     transition: 0.2s ease color;
+}
+nav a:hover{
+    color:rgb(243, 74, 44);
+}
+
+
+/* -----------for login form  top to mid ---------------- */
+
+#hero1::after{
+    /* content: ''; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+
+}
+.container{
+    min-height: 90vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+/*  --------------------for registration form top to mid----------- */
+.container-1{
+    min-height: 120vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+#hero2::after{
+    /* content: ''; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+   
+
+
+}
+
+
+/*  --------------------for booking form top to mid----------- */
+.container-2{
+    min-height: 1200vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+#hero3::after{
+    /* content: ''; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+   
+
+
+}
+
+
